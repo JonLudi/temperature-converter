@@ -1,8 +1,8 @@
 print("Welcome to Temperature Converter, a lightweight utility for converting temperature.")
 
 #Create variable for the unit that's being converted and the temperature
-unit = input ("Please specify the temperature you want converted: ")
-value = input("Please specify the temperature you want converted: ")
+unit = input ("Please specify the temperature you want converted: ").upper()
+value = float(input("Please specify the temperature you want converted: "))
 
 #Function that converts C to f
 def c_to_f(temp_c):
@@ -21,5 +21,10 @@ def main():
     elif(unit == "F"):
         fahrenheit_to_celsius = f_to_c(value)
         return fahrenheit_to_celsius
+else:
+    warning = "Please enter C or F to specify the unit:"
+    return warning 
 
 #Print results
+result = main()
+print("Your value is:" + str(result))
