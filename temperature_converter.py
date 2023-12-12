@@ -45,7 +45,7 @@ def main():
     elif(unit == "K"):
         kelvin_to_celsius = k_to_c(value)
         return kelvin_to_celsius
-el:
+else:
 warning = "Please enter C or F to specify the unit:"
 return warning 
 
